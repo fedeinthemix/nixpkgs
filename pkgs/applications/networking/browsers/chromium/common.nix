@@ -164,6 +164,8 @@ let
       ./patches/no-build-timestamps.patch
       # For bundling Widevine (DRM), might be replaceable via bundle_widevine_cdm=true in gnFlags:
       ./patches/widevine-79.patch
+      # Fix corrupted image in Screen sharing on wayland with WebRTC PipeWire enabled on ultrawide resolution
+      ./patches/chromium-webrtc-fix.patch
     ];
 
     postPatch = ''
